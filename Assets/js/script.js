@@ -370,73 +370,109 @@ var auditTasks = function() {
     var time = moment().format('HH')
 
     if (time === $('.hr-1').text()) {
+        $('#taskInputOne').removeClass('past');
+        $('#taskInputOne').addClass('present');
         $('#firstHr').removeClass('past');
         $('#firstHr').addClass('present');
     } else if ($('.hr-1').text() > time) {
+        $('#taskInputOne').removeClass('past');
+        $('#taskInputOne').addClass('future');
         $('#firstHr').removeClass('past');
         $('#firstHr').addClass('future');
     }
 
     if (time === $('.hr-2').text()) {
+        $('#taskInputTwo').removeClass('past');
+        $('#taskInputTwo').addClass('present');
         $('#secondHr').removeClass('past');
         $('#secondHr').addClass('present');
     } else if ($('.hr-2').text() > time) {
+        $('#taskInputTwo').removeClass('past');
+        $('#taskInputTwo').addClass('future');
         $('#secondHr').removeClass('past');
         $('#secondHr').addClass('future');
     }
 
     if (time === $('.hr-3').text()) {
+        $('#taskInputThree').removeClass('past');
+        $('#taskInputThree').addClass('present');
         $('#thirdHr').removeClass('past');
         $('#thirdHr').addClass('present');
     } else if ($('.hr-3').text() > time) {
+        $('#taskInputThree').removeClass('past');
+        $('#taskInputThree').addClass('future');
         $('#thirdHr').removeClass('past');
         $('#thirdHr').addClass('future');
     }
 
     if (time === $('.hr-4').text()) {
+        $('#taskInputFour').removeClass('past');
+        $('#taskInputFour').addClass('present');
         $('#fourthHr').removeClass('past');
         $('#fourthHr').addClass('present');
     } else if ($('.hr-4').text() > time) {
+        $('#taskInputFour').removeClass('past');
+        $('#taskInputFour').addClass('future');
         $('#fourthHr').removeClass('past');
         $('#fourthHr').addClass('future');
     }
 
     if (time === $('.hr-5').text()) {
+        $('#taskInputFive').removeClass('past');
+        $('#taskInputFive').addClass('present');
         $('#fifthHr').removeClass('past');
         $('#fifthHr').addClass('present');
     } else if ($('.hr-5').text() > time) {
+        $('#taskInputFive').removeClass('past');
+        $('#taskInputFive').addClass('future');
         $('#fifthHr').removeClass('past');
         $('#fifthHr').addClass('future');
     }
 
     if (time === $('.hr-6').text()) {
+        $('#taskInputSix').removeClass('past');
+        $('#taskInputSix').addClass('present');
         $('#sixthHr').removeClass('past');
         $('#sixthHr').addClass('present');
     } else if ($('.hr-6').text() > time) {
+        $('#taskInputSix').removeClass('past');
+        $('#taskInputSix').addClass('future');
         $('#sixthHr').removeClass('past');
         $('#sixthHr').addClass('future');
     }
 
     if (time === $('.hr-7').text()) {
+        $('#taskInputSeven').removeClass('past');
+        $('#taskInputSeven').addClass('present');
         $('#seventhHr').removeClass('past');
         $('#seventhHr').addClass('present');
     } else if ($('.hr-7').text() > time) {
+        $('#taskInputSeven').removeClass('past');
+        $('#taskInputSeven').addClass('future');
         $('#seventhHr').removeClass('past');
         $('#seventhHr').addClass('future');
     }
 
     if (time === $('.hr-8').text()) {
+        $('#taskInputEight').removeClass('past');
+        $('#taskInputEight').addClass('present');
         $('#eigthHr').removeClass('past');
         $('#eigthHr').addClass('present');
     } else if ($('.hr-8').text() > time) {
+        $('#taskInputEight').removeClass('past');
+        $('#taskInputEight').addClass('future');
         $('#eigthHr').removeClass('past');
         $('#eigthHr').addClass('future');
     }
 
     if (time === $('.hr-9').text()) {
+        $('#taskInputNine').removeClass('past');
+        $('#taskInputNine').addClass('present');
         $('#ninthHr').removeClass('past');
         $('#ninthHr').addClass('present');
     } else if ($('.hr-9').text() > time) {
+        $('#taskInputNine').removeClass('past');
+        $('#taskInputNine').addClass('future');
         $('#ninthHr').removeClass('past');
         $('#ninthHr').addClass('future');
     }
