@@ -5,25 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- link to open-iconic for the save button icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link to bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- link to font library -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- link to another font library -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- link to the custom CSS stylesheet -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
+  <!-- on loading the page, the indicated functions will run, displaying data from moment.js and localstorage -->
   <body onload="currentDate(); loadTaskOne(); loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive(); loadTaskSix(); loadTaskSeven(); loadTaskEight(); loadTaskNine(); auditTasks()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -33,11 +39,13 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="time-block card mx-auto mx-md-5">
+        <!-- Table heading to indicate what is in each of the columns in the timeblocks -->
         <div id="tableHead" class="row bg-warning border-bottom border-primary">
           <div class="col-2 col-md-1 my-auto font-italic tableHead-content">Hour</div>
           <div class="textarea col-8 col-md-10 my-auto font-italic  tableHead-content">Task</div>
           <div class="col-2 col-md-1 my-auto font-italic  tableHead-content">Save</div>
         </div>
+        <!-- Actual timeblocks going from the first hour, 9am (09), to the last, 5pm (17) -->
         <div id='firstHr' class="row past">
           <div class="hour hr-1 col-2 col-md-1">09</div>
           <input type="text" id="taskInputOne" class="col-8 col-md-10 textarea past"></input>
@@ -113,8 +121,10 @@
       </div>
     </div>
 
+    <!-- I noticed what looked like a footer in the mockup, so I added this to give some space at the bottom of the page -->
     <footer class="my-4 py-4"></footer>
 
+    <!-- links to jquery, moment.js, and my custom .js file -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/js/script.js"></script>

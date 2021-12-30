@@ -1,9 +1,11 @@
+// function to display today's date in the page's header, using moment.js
 var currentDate = function() {
     var date = moment().format('dddd, MMMM Do');
 
     $('#currentDay').append(date);
 }
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskOne = function() {
     if (localStorage.getItem('task1') !== null) {
         var taskOneText = JSON.parse(localStorage.getItem('task1'));    
@@ -15,16 +17,19 @@ var loadTaskOne = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputOne').on('blur', function() {
     $('oldTaskOne').text(JSON.parse(localStorage.getItem('task1')));
 }, loadTaskOne);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskOne').on('click', function() {
     $('#oldTaskOne').addClass('hidden');
     $('#taskInputOne').removeClass('hidden');
     $('#taskInputOne').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskTwo = function() {
     if (localStorage.getItem('task2') !== null) {
         $('#taskInputTwo').addClass('hidden');
@@ -36,16 +41,19 @@ var loadTaskTwo = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputTwo').on('blur', function() {
     $('oldTaskTwo').text(JSON.parse(localStorage.getItem('task2')));
 }, loadTaskTwo);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskTwo').on('click', function() {
     $('#oldTaskTwo').addClass('hidden');
     $('#taskInputTwo').removeClass('hidden');
     $('#taskInputTwo').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskThree = function() {
     if (localStorage.getItem('task3') !== null) {
         $('#taskInputThree').addClass('hidden');
@@ -57,16 +65,19 @@ var loadTaskThree = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputThree').on('blur', function() {
     $('oldTaskThree').text(JSON.parse(localStorage.getItem('task3')));
 }, loadTaskThree);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskThree').on('click', function() {
     $('#oldTaskThree').addClass('hidden');
     $('#taskInputThree').removeClass('hidden');
     $('#taskInputThree').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskFour = function() {
     if (localStorage.getItem('task4') !== null) {
         $('#taskInputFour').addClass('hidden');
@@ -78,16 +89,19 @@ var loadTaskFour = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputFour').on('blur', function() {
     $('oldTaskFour').text(JSON.parse(localStorage.getItem('task4')));
 }, loadTaskFour);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskFour').on('click', function() {
     $('#oldTaskFour').addClass('hidden');
     $('#taskInputFour').removeClass('hidden');
     $('#taskInputFour').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskFive = function() {
     if (localStorage.getItem('task5') !== null) {
         $('#taskInputFive').addClass('hidden');
@@ -99,16 +113,19 @@ var loadTaskFive = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputFive').on('blur', function() {
     $('oldTaskFive').text(JSON.parse(localStorage.getItem('task5')));
 }, loadTaskFive);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskFive').on('click', function() {
     $('#oldTaskFive').addClass('hidden');
     $('#taskInputFive').removeClass('hidden');
     $('#taskInputFive').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskSix = function() {
     if (localStorage.getItem('task6') !== null) {
         $('#taskInputSix').addClass('hidden');
@@ -120,16 +137,19 @@ var loadTaskSix = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputSix').on('blur', function() {
     $('oldTaskSix').text(JSON.parse(localStorage.getItem('task6')));
 }, loadTaskSix);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskSix').on('click', function() {
     $('#oldTaskSix').addClass('hidden');
     $('#taskInputSix').removeClass('hidden');
     $('#taskInputSix').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskSeven = function() {
     if (localStorage.getItem('task7') !== null) {
         $('#taskInputSeven').addClass('hidden');
@@ -141,16 +161,19 @@ var loadTaskSeven = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputSeven').on('blur', function() {
     $('oldTaskSeven').text(JSON.parse(localStorage.getItem('task7')));
 }, loadTaskSeven);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskSeven').on('click', function() {
     $('#oldTaskSeven').addClass('hidden');
     $('#taskInputSeven').removeClass('hidden');
     $('#taskInputSeven').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskEight = function() {
     if (localStorage.getItem('task8') !== null) {
         $('#taskInputEight').addClass('hidden');
@@ -162,16 +185,19 @@ var loadTaskEight = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputEight').on('blur', function() {
     $('oldTaskEight').text(JSON.parse(localStorage.getItem('task8')));
 }, loadTaskEight);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskEight').on('click', function() {
     $('#oldTaskEight').addClass('hidden');
     $('#taskInputEight').removeClass('hidden');
     $('#taskInputEight').trigger('focus');
 });
 
+// gets data from local storage, changes out the input element for a p element, and prints the data from local storage to that p element
 var loadTaskNine = function() {
     if (localStorage.getItem('task9') !== null) {
         $('#taskInputNine').addClass('hidden');
@@ -183,16 +209,19 @@ var loadTaskNine = function() {
     }
 }
 
+// allows the loading function to work when the page outside of the input field is clicked as well
 $('#taskInputNine').on('blur', function() {
     $('oldTaskNine').text(JSON.parse(localStorage.getItem('task9')));
 }, loadTaskNine);
 
+// allows user to edit the task by changing the p element back to an input one
 $('#oldTaskNine').on('click', function() {
     $('#oldTaskNine').addClass('hidden');
     $('#taskInputNine').removeClass('hidden');
     $('#taskInputNine').trigger('focus');
 });
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskOne = function() {
     if ($('#taskInputOne').val() === "") {
         var text = this;
@@ -212,8 +241,10 @@ var saveTaskOne = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnOne').on('click', saveTaskOne);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskTwo = function() {
     if ($('#taskInputTwo').val() === "") {
         var text = this;
@@ -231,8 +262,10 @@ var saveTaskTwo = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnTwo').on('click', saveTaskTwo);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskThree = function() {
     if ($('#taskInputThree').val() === "") {
         var text = this;
@@ -250,8 +283,10 @@ var saveTaskThree = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnThree').on('click', saveTaskThree);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskFour = function() {
     if ($('#taskInputFour').val() === "") {
         var text = this;
@@ -269,8 +304,10 @@ var saveTaskFour = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnFour').on('click', saveTaskFour);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskFive = function() {
     if ($('#taskInputFive').val() === "") {
         var text = this;
@@ -288,8 +325,10 @@ var saveTaskFive = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnFive').on('click', saveTaskFive);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskSix = function() {
     if ($('#taskInputSix').val() === "") {
         var text = this;
@@ -307,8 +346,10 @@ var saveTaskSix = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnSix').on('click', saveTaskSix);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskSeven = function() {
     if ($('#taskInputSeven').val() === "") {
         var text = this;
@@ -326,8 +367,10 @@ var saveTaskSeven = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnSeven').on('click', saveTaskSeven);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskEight = function() {
     if ($('#taskInputEight').val() === "") {
         var text = this;
@@ -345,8 +388,10 @@ var saveTaskEight = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnEight').on('click', saveTaskEight);
 
+// checks that a non-empty value has been input by the user, saves that value to localstorage, then converts the input element to a p element
 var saveTaskNine = function() {
     if ($('#taskInputNine').val() === "") {
         var text = this;
@@ -364,10 +409,12 @@ var saveTaskNine = function() {
     }
 }
 
+// event listener for when the save button is cicked for this particular timeblock
 $('#saveBtnNine').on('click', saveTaskNine);
 
+// function to change the background color for each timeblock based on comparing that block's indicated time with the current time, found via moment.js
 var auditTasks = function() {
-    var time = moment().format('HH')
+    var time = moment().format('HH');
 
     if (time === $('.hr-1').text()) {
         $('#taskInputOne').removeClass('past');
@@ -478,4 +525,5 @@ var auditTasks = function() {
     }
 }
 
+// function to re-run the auditTasks function every 30 minutes
 setInterval(auditTasks(), 1800000);
