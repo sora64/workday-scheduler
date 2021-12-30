@@ -92,7 +92,7 @@ textarea {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .oldTask {
     font-size: 4vw;
   }  
