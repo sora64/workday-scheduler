@@ -27,7 +27,7 @@
   <body onload="currentDate(); loadTaskOne(); loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive(); loadTaskSix(); loadTaskSeven(); loadTaskEight(); loadTaskNine(); auditTasks()">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">This website provides a simple calendar app for scheduling your work day. The hours are listed in military time.</p>
+      <p class="lead">This website provides a simple calendar app for scheduling your work day. The hours are listed in the 24 hour format.</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
@@ -41,7 +41,7 @@
         <div id='firstHr' class="row past">
           <div class="hour hr-1 col-2 col-md-1">09</div>
           <input type="text" id="taskInputOne" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskOne" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskOne" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnOne" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -49,7 +49,7 @@
         <div id='secondHr' class="row past">
           <div class="hour hr-2 col-2 col-md-1">10</div>
           <input type="text" id="taskInputTwo" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskTwo" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskTwo" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnTwo" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -57,7 +57,7 @@
         <div id='thirdHr' class="row past">
           <div class="hour hr-3 col-2 col-md-1">11</div>
           <input type="text" id="taskInputThree" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskThree" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskThree" class="hidden col-8 col-md-10 textarea text-justify my-auto h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnThree" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -65,7 +65,7 @@
         <div id='fourthHr' class="row past">
           <div class="hour hr-4 col-2 col-md-1">12</div>
           <input type="text" id="taskInputFour" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskFour" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskFour" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnFour" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -73,7 +73,7 @@
         <div id='fifthHr' class="row past">
           <div class="hour hr-5 col-2 col-md-1">13</div>
           <input type="text" id="taskInputFive" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskFive" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskFive" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnFive" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -81,7 +81,7 @@
         <div id='sixthHr' class="row past">
           <div class="hour hr-6 col-2 col-md-1">14</div>
           <input type="text" id="taskInputSix" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskSix" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskSix" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnSix" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -89,7 +89,7 @@
         <div id='seventhHr' class="row past">
           <div class="hour hr-7 col-2 col-md-1">15</div>
           <input type="text" id="taskInputSeven" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskSeven" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskSeven" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnSeven" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -97,7 +97,7 @@
         <div id='eigthHr' class="row past">
           <div class="hour hr-8 col-2 col-md-1">16</div>
           <input type="text" id="taskInputEight" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskEight" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskEight" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnEight" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>
@@ -105,7 +105,7 @@
         <div id='ninthHr' class="row past">
           <div class="hour hr-9 col-2 col-md-1">17</div>
           <input type="text" id="taskInputNine" class="col-8 col-md-10 textarea past"></input>
-          <p id="oldTaskNine" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 h4 overflow-hidden oldTask"></p>
+          <p id="oldTaskNine" class="hidden col-8 col-md-10 textarea text-justify my-auto  h-100 overflow-hidden oldTask"></p>
           <button id="saveBtnNine" class="saveBtn col-2 col-md-1">
             <span class="oi oi-box"></span>
           </button>

@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -47,6 +47,11 @@ textarea{
   color: #000000;
   border-top: 1px dashed #000000;
   padding-top: 1.7em;
+}
+
+.oldTask {
+  font-size: 3.5vh;
+  padding-top: 1.7rem;
 }
 
 .past {
