@@ -4,13 +4,17 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 1.7em;
+}
+
+.tableHead-content {
+  font-size: 1.2rem;
 }
 
 .jumbotron {
@@ -45,11 +49,16 @@ textarea{
   padding-top: 1.7em;
 }
 
+.oldTask {
+  font-size: 1.5em;
+  padding-top: 1.7rem;
+}
+
 .past {
   background-color: #d3d3d3;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  color: white;
+  color: black;
 }
 
 .present {
@@ -81,4 +90,10 @@ textarea{
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .oldTask {
+    font-size: 4vw;
+  }  
 }
