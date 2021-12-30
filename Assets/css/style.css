@@ -21,8 +21,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
-  white-space: pre-wrap;
+
+#tableHead {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .time-block{

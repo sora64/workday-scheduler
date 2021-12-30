@@ -28,12 +28,17 @@
     <!-- loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive()"> -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p class="lead">This website provides a simple calendar app for scheduling your work day. The hours are listed in military time.</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="time-block card mx-auto mx-md-5">
+        <div id="tableHead" class="row bg-warning border-bottom border-primary">
+          <div class="col-1 h4 my-auto font-italic">Hour</div>
+          <div class="textarea col-10 h4 my-auto font-italic">Task</div>
+          <div class="col-1 h4 my-auto font-italic">Save</div>
+        </div>
         <div id='firstHr' class="row past">
           <div class="hour hr-1 col-1">9</div>
           <input type="text" id="taskInputOne" class="col-10 textarea"></input>
