@@ -45,16 +45,22 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
 }
 
 .present {
   background-color: #ff6961;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
 }
 
 .future {
   background-color: #77dd77;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
 }
 

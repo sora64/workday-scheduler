@@ -24,7 +24,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body onload="currentDate(); loadTaskOne(); loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive(); loadTaskSix(); loadTaskSeven(); loadTaskEight(); loadTaskNine()">
+  <body onload="currentDate(); loadTaskOne(); loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive(); loadTaskSix(); loadTaskSeven(); loadTaskEight(); loadTaskNine(); auditTasks()">
     <!-- loadTaskTwo(); loadTaskThree(); loadTaskFour(); loadTaskFive()"> -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -34,72 +34,72 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="time-block card mx-auto mx-md-5">
-        <div class="row">
-          <div class="hour col-1">9am</div>
+        <div id='firstHr' class="row">
+          <div class="hour hr-1 col-1">9</div>
           <input type="text" id="taskInputOne" class="col-10 textarea"></input>
           <p id="oldTaskOne" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnOne" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1 ">10am</div>
+        <div id='secondHr' class="row">
+          <div class="hour hr-2 col-1 ">10</div>
           <input type="text" id="taskInputTwo" class="col-10 textarea"></input>
           <p id="oldTaskTwo" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnTwo" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1 justify-content-end">11am</div>
+        <div id='thirdHr' class="row">
+          <div class="hour hr-3 col-1 justify-content-end">11</div>
           <input type="text" id="taskInputThree" class="col-10"></input>
           <p id="oldTaskThree" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnThree" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">12pm</div>
+        <div id='fourthHr' class="row">
+          <div class="hour hr-4 col-1">12</div>
           <input type="text" id="taskInputFour" class="col-10"></input>
           <p id="oldTaskFour" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnFour" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">1pm</div>
+        <div id='fifthHr' class="row">
+          <div class="hour hr-5 col-1">13</div>
           <input type="text" id="taskInputFive" class="col-10"></input>
           <p id="oldTaskFive" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnFive" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">2pm</div>
+        <div id='sixthHr' class="row">
+          <div class="hour hr-6 col-1">14</div>
           <input type="text" id="taskInputSix" class="col-10"></input>
           <p id="oldTaskSix" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnSix" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">3pm</div>
+        <div id='seventhHr' class="row">
+          <div class="hour hr-7 col-1">15</div>
           <input type="text" id="taskInputSeven" class="col-10"></input>
           <p id="oldTaskSeven" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnSeven" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">4pm</div>
+        <div id='eigthHr' class="row">
+          <div class="hour hr-8 col-1">16</div>
           <input type="text" id="taskInputEight" class="col-10"></input>
           <p id="oldTaskEight" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnEight" class="saveBtn col-1">
             <span class="oi oi-box"></span>
           </button>
         </div>
-        <div class="row">
-          <div class="hour col-1">5pm</div>
+        <div id='ninthHr' class="row">
+          <div class="hour hr-9 col-1">17</div>
           <input type="text" id="taskInputNine" class="col-10"></input>
           <p id="oldTaskNine" class="hidden col-10 textarea text-justify my-auto oldTask"></p>
           <button id="saveBtnNine" class="saveBtn col-1">

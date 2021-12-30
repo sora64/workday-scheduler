@@ -1,7 +1,5 @@
 var currentDate = function() {
-    var date = moment().format("dddd, MMMM Do");
-
-    console.log(date);
+    var date = moment().format('dddd, MMMM Do');
 
     $('#currentDay').append(date);
 }
@@ -374,3 +372,81 @@ $('#oldTaskNine').on('click', function() {
     $('#taskInputNine').trigger('focus');
     saveTaskNine();
 });
+
+var auditTasks = function() {
+    var time = moment().format('H')
+
+    if (time === $('.hr-1').text()) {
+        $('#firstHr').addClass('present');
+    } else if ($('.hr-1').text() > time) {
+        $('#firstHr').addClass('future');
+    } else if ($('.hr-1').text() < time) {
+        $('#firstHr').addClass('past');
+    }
+
+    if (time === $('.hr-2').text()) {
+        $('#secondHr').addClass('present');
+    } else if ($('.hr-2').text() > time) {
+        $('#secondHr').addClass('future');
+    } else if ($('.hr-2').text() < time) {
+        $('#secondHr').addClass('past');
+    }
+
+    if (time === $('.hr-3').text()) {
+        $('#thirdHr').addClass('present');
+    } else if ($('.hr-3').text() > time) {
+        $('#thirdHr').addClass('future');
+    } else if ($('.hr-3').text() < time) {
+        $('#thirdHr').addClass('past');
+    }
+
+    if (time === $('.hr-4').text()) {
+        $('#fourthHr').addClass('present');
+    } else if ($('.hr-4').text() > time) {
+        $('#fourthHr').addClass('future');
+    } else if ($('.hr-4').text() < time) {
+        $('#fourthHr').addClass('past');
+    }
+
+    if (time === $('.hr-5').text()) {
+        $('#fifthHr').addClass('present');
+    } else if ($('.hr-5').text() > time) {
+        $('#fifthHr').addClass('future');
+    } else if ($('.hr-5').text() < time) {
+        $('#fifthHr').addClass('past');
+    }
+
+    if (time === $('.hr-6').text()) {
+        $('#sixthHr').addClass('present');
+    } else if ($('.hr-6').text() > time) {
+        $('#sixthHr').addClass('future');
+    } else if ($('.hr-6').text() < time) {
+        $('#sixthHr').addClass('past');
+    }
+
+    if (time === $('.hr-7').text()) {
+        $('#seventhHr').addClass('present');
+    } else if ($('.hr-7').text() > time) {
+        $('#seventhHr').addClass('future');
+    } else if ($('.hr-7').text() < time) {
+        $('#seventhHr').addClass('past');
+    }
+
+    if (time === $('.hr-8').text()) {
+        $('#eigthHr').addClass('present');
+    } else if ($('.hr-8').text() > time) {
+        $('#eigthHr').addClass('future');
+    } else if ($('.hr-8').text() < time) {
+        $('#eigthHr').addClass('past');
+    }
+
+    if (time === $('.hr-9').text()) {
+        $('#ninthHr').addClass('present');
+    } else if ($('.hr-9').text() > time) {
+        $('#ninthHr').addClass('future');
+    } else if ($('.hr-9').text() < time) {
+        $('#ninthHr').addClass('past');
+    }
+}
+
+setInterval(auditTasks(), 1800000);
