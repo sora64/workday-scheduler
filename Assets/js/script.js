@@ -367,7 +367,7 @@ var saveTaskNine = function() {
 $('#saveBtnNine').on('click', saveTaskNine);
 
 var auditTasks = function() {
-    var time = moment().format('H')
+    var time = moment().format('HH')
 
     if (time === $('.hr-1').text()) {
         $('#firstHr').removeClass('past');
