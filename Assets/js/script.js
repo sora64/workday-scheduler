@@ -16,6 +16,8 @@ var saveTaskOne = function() {
 
         localStorage.setItem('task1', JSON.stringify(text));
         $('#oldTaskOne').text(text);
+        $('#oldTaskOne').removeClass('hidden');
+        $('#taskInputOne').addClass('hidden');
 
         console.log(text);
     }
@@ -33,6 +35,8 @@ var saveTaskTwo = function() {
 
         localStorage.setItem('task2', JSON.stringify(text));
         $('#oldTaskTwo').text(text);
+        $('#oldTaskTwo').removeClass('hidden');
+        $('#taskInputTwo').addClass('hidden');
 
         console.log(text);
     }
@@ -50,6 +54,8 @@ var saveTaskThree = function() {
 
         localStorage.setItem('task3', JSON.stringify(text));
         $('#oldTaskThree').text(text);
+        $('#oldTaskThree').removeClass('hidden');
+        $('#taskInputThree').addClass('hidden');
 
         console.log(text);
     }
@@ -67,6 +73,8 @@ var saveTaskFour = function() {
 
         localStorage.setItem('task4', JSON.stringify(text));
         $('#oldTaskFour').text(text);
+        $('#oldTaskFour').removeClass('hidden');
+        $('#taskInputFour').addClass('hidden');
 
         console.log(text);
     }
@@ -84,6 +92,8 @@ var saveTaskFive = function() {
 
         localStorage.setItem('task5', JSON.stringify(text));
         $('#oldTaskFive').text(text);
+        $('#oldTaskFive').removeClass('hidden');
+        $('#taskInputFive').addClass('hidden');
 
         console.log(text);
     }
@@ -101,6 +111,8 @@ var saveTaskSix = function() {
 
         localStorage.setItem('task6', JSON.stringify(text));
         $('#oldTaskSix').text(text);
+        $('#oldTaskSix').removeClass('hidden');
+        $('#taskInputSix').addClass('hidden');
 
         console.log(text);
     }
@@ -118,6 +130,8 @@ var saveTaskSeven = function() {
 
         localStorage.setItem('task7', JSON.stringify(text));
         $('#oldTaskSeven').text(text);
+        $('#oldTaskSeven').removeClass('hidden');
+        $('#taskInputSeven').addClass('hidden');
 
         console.log(text);
     }
@@ -135,6 +149,8 @@ var saveTaskEight = function() {
 
         localStorage.setItem('task8', JSON.stringify(text));
         $('#oldTaskEight').text(text);
+        $('#oldTaskEight').removeClass('hidden');
+        $('#taskInputEight').addClass('hidden');
 
         console.log(text);
     }
@@ -152,6 +168,8 @@ var saveTaskNine = function() {
 
         localStorage.setItem('task9', JSON.stringify(text));
         $('#oldTaskNine').text(text);
+        $('#oldTaskNine').removeClass('hidden');
+        $('#taskInputNine').addClass('hidden');
 
         console.log(text);
     }
