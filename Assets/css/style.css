@@ -50,7 +50,7 @@ textarea {
 }
 
 .oldTask {
-  font-size: 3.5vh;
+  font-size: 1.5em;
   padding-top: 1.7rem;
 }
 
@@ -90,4 +90,10 @@ textarea {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .oldTask {
+    font-size: 4vw;
+  }  
 }
